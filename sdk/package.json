@@ -31,10 +31,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "npm run generate && npm run build:ts",
-    "build:ts": "tsc",
-    "build:native": "tsx scripts/build-native.ts",
-    "build:native:all": "tsx scripts/build-native.ts --all",
+    "build": "node init && npm run generate && npm run build:ts",
+    "build:ts": "node init && tsc",
+    "build:native": "node init && tsx scripts/build-native.ts",
+    "build:native:all": "node init && tsx scripts/build-native.ts --all",
     "generate": "tsx generate-schema.ts",
     "lint": "tsc --noEmit",
     "format": "prettier --write src/"
