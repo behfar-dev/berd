@@ -10,13 +10,10 @@ dist/
 **/target/
 
 # Environment files
-.env
-.env.*
 !.env.example
 
 # Editor / IDE
 .idea/
-.vscode/
 *.swp
 *.swo
 *~
@@ -67,3 +64,4 @@ src-tauri/binaries/
 # Generated release config and catalog (created by scripts/release/build-tauri-release-config.mjs)
 src-tauri/tauri.release.conf.json
 src-tauri/resources/release-channels.json
+config.bat
